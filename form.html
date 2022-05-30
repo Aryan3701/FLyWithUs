@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <style>
+        #container {
+            box-sizing: border-box;
+            border: black 2px solid;
+            text-align: center;
+            padding: 50px;
+            background-color: wheat;
+            height: 100vh;
+        }
+        
+        #Head {
+            font-family: "Arial", cursive;
+        }
+        
+        .n1 {
+            font-size: large;
+            margin: 10px;
+            width: 15em;
+            text-align: center;
+        }
+        
+        .b1 {
+            width: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="Head"><u> TRAVEL RESERVATION FORM</u></h1><br>
+        <h3> * denotes mandatory </h3>
+        <hr>
+        <input class="n1" type="text" name="passengername" placeholder="Name"><br>
+        <input class="n1" type="tel" name="mobile" required placeholder="*Mobile Number"><br>
+        <input class="n1" type="email" name="mailId" placeholder="*Email ID" required><br>
+        <select class="n1" name="travelmonth">
+            <option value="month of travel">Month of Travel</option>
+            <option value="aug2018">Aug2018</option>
+            <option value="sep2018">Sep2018</option>
+            <option value="oct2018">Oct2018</option>
+            <option value="nov2018">Nov2018</option>
+            <option value="dec2018">Dec2018</option>
+            <option value="jan2019">Jan2019</option>
+            <option value="feb2019">Feb2019</option>
+            <option value="mar2018">Mar2018</option>
+            <option value="apr2018">Apr2018</option>
+        </select>
+        <br>
+        <select class="n1" name="package" required>
+            <option value="origin"> *Origin</option>
+            <option value='India'> India</option>
+            <option value="Russia"> Russia</option>
+            <option value="America"> America</option>
+        </select><br>
+        <select class="n1" name="package" required>
+            <option value="destination"> Destination</option>
+            <option value='India'> India</option>
+            <option value="Russia"> Russia</option>
+            <option value="America"> America</option>
+        </select><br>
+        <input class="b1" type="submit" name="submit" value="Book">
+        <input class="b1" type="reset" name="clear" value="Clear">
+    </div>
+</body>
+
+</html>
